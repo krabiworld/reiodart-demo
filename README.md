@@ -18,5 +18,5 @@ $ webdev serve --release
 
 ### Build
 ```bash
-$ build: webdev build --release
+$ webdev build --release
 ```
