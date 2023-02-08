@@ -1,22 +1,17 @@
-## About
+## Introduction
 
-Template with a demo version of the [Reio.dart](https://github.com/MineEjo/reiodart) functionality view.
+[Reio](https://github.com/MineEjo/reiodart) is a progressive [Dart](https://dart.dev/) framework for creating UI on the web. Uses HTML, CSS and [Dart](https://dart.dev/), which is compiled into efficient JavaScript code.
 
 ## Getting Started
 
-Please follow the [documentation](https://github.com/MineEjo/reiodart/wiki)!
+Please follow the [documentation](https://mineejo.github.io/reiodart/)!
 
-### Test
-```bash
-$ dart run build_runner test -- -p firefox
-```
+## Questions
 
-### Dev
-```bash
-$ webdev serve --release
-```
+For questions and support please use [discussions](https://github.com/MineEjo/reiodart/discussions).
 
-### Build
-```bash
-$ webdev build --release
-```
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2022-present, MineEjo
