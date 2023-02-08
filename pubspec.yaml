@@ -1,5 +1,6 @@
 name: website
 
+# Don't forget to enter the folder, e.g. with `cd test`.
 executables:
   # The tests are done with firefox because chrome is
   # often added as a stable prefix in third-party linux
@@ -10,16 +11,17 @@ executables:
   #
   # The best solution at the moment, is to change the platform from chrome to firefox.
   test: dart run build_runner test -- -p firefox
-  dev: webdev serve --release
-  build: webdev build --release
+  dev: webdev serve --auto=refresh
+  serve: webdev serve --release
+  build: webdev build --release --output ./web_output
 
 environment:
   sdk: '>=2.17.6 <3.0.0'
 
 dev_dependencies:
-  test: ^1.22.1
+  test: ^1.23.0
   build_runner: ^2.3.3
-  build_test: ^2.1.5
+  build_test: ^2.1.6
   build_web_compilers: ^3.2.7
   lints: ^2.0.1
-  reio: ^0.1.0
+  reio: ^0.2.2
