@@ -32,29 +32,7 @@ Widget layout = Layout(
         .$(P('Examples').id('examples'))
         .$slot(Layout.counterSlot)
         .$(Br())
-        .$slot(Layout.observerSlot)
-        .$(Div()
-            .id('footer')
-            .$(Div('GitHub')
-                .thisClass(['footer-title'])
-                .$(Span(go(1)).to({
-                  1: A('Repository')
-                      .href('https://github.com/MineEjo/reiodart'),
-                }))
-                .$(Span(go(1)).to({
-                  1: A('Documentation')
-                      .href('https://mineejo.github.io/reiodart/'),
-                })))
-            .$(Div('Pub.dev')
-                .thisClass(['footer-title'])
-                .$(Span(go(1)).to({
-                  1: A('Package').href('https://pub.dev/packages/reio'),
-                }))
-                .$(Span(go(1)).to({
-                  1: A('API reference')
-                      .href('https://pub.dev/documentation/reio/latest/'),
-                }))))
-        .$(Span('© 2023 MineEjo').id('footer-copy')),
+        .$slot(Layout.observerSlot),
     () => '''<style>
     #example {
       display: grid;
@@ -80,37 +58,5 @@ Widget layout = Layout(
 
     a:hover {
       box-shadow: var(--box-shadow-3);
-    }
-
-    #footer, #footer-copy {
-      margin-top: var(--margin-top-1);
-      background-color: var(--color-shadow);
-      padding: var(--padding-1);
-      display: grid;
-      grid-template-columns: auto auto;
-    }
-    
-    #footer-copy {
-      margin-top: 0;
-      justify-content: center;
-    }
-
-    @media only screen and (max-width: 700px) {
-      #footer {
-        grid-template-columns: auto;
-      }
-    }
-
-    .footer-title {
-      padding: var(--padding-3);
-      font-weight: bold;
-      list-style: none;
-      display: block;
-    }
-    
-    .footer-title span {
-      padding-top: var(--padding-4);
-      display: block;
-      font-weight: normal;
     }
     </style>''');
